@@ -11,13 +11,17 @@ function App() {
   // let counter = 15
 
   const addValue = () => {
-    console.log("clicked", counter);
+    // console.log("clicked", counter);
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
 
     if(counter < 20){
       setCounter(counter + 1)
     }
-    // counter = counter + 1;
-    // setCounter(counter + 1)
+    // counter = prevCounter => prevCounter + 1;
+    // setCounter(prevCounter => prevCounter + 1)
   }
 
   const removeValue = () => {
